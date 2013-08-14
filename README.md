@@ -1,6 +1,30 @@
 # In Viewport
 
-Check if an image is in the viewport
+Check if any part of an element is in the viewport.
+
+## API
+
+### inViewport(element, [border])
+
+```js
+var inViewport = require('in-viewport')
+
+var el = document.querySelector('img')
+
+if (inViewport(el, window.innerHeight / 2)) {
+
+} else {
+
+}
+```
+
+`element` is the element you want to check.
+`border` is the number of pixels outside the viewport you want to check.
+For example, to check whether an element is within `200px` of the viewport, you do `inViewport(element, 200)`.
+
+## Compatibility
+
+IE9+
 
 ## License
 
