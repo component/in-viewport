@@ -1,0 +1,11 @@
+{
+  "name": "in-viewport",
+  "description": "Check if an element is in the viewport",
+  "version": "0.0.1",
+  "scripts": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "repo": "discore/in-viewport"
+}
