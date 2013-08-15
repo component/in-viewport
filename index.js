@@ -1,11 +1,12 @@
 module.exports = function (el, threshold) {
   threshold = threshold || 0
-  var height = window.innerHeight + threshold
-  var width = window.innerWidth + threshold
-  var rect = el.getBoundingClientRect()
 
-  return rect.top >= rect.height - height
-    && rect.left >= rect.width - width
-    && rect.bottom <= rect.height + height
-    && rect.right <= rect.width + width
+  var rect = el.getBoundingClientRect()
+  var height = (rect.height || el.clientHeight || 0) + threshold
+  var width = (rect.width || el.clientWidth || 0) + threshold
+
+  return rect.top >= - height
+    && rect.left >= - width
+    && rect.bottom <= height + window.innerHeight
+    && rect.right <= width + window.innerWidth
 }
