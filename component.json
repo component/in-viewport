@@ -7,5 +7,5 @@
   ],
   "main": "index.js",
   "license": "MIT",
-  "repo": "discore/in-viewport"
+  "repo": "component/in-viewport"
 }
